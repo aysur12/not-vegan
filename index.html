@@ -47,7 +47,7 @@
                                   <span class="application-form__icon">
                                     <img src="./img/tel-icon.svg" alt="Икона телефона">
                                   </span>
-                                  <input class="application-form__input" id="phone" type="tel" name="phone" placeholder="+7 (___) ___ ____" pattern="\+?[0-9\s\-\(\)]+" required>
+                                  <input class="application-form__input" id="phone1" type="tel" name="phone" placeholder="+7 (___) ___ ____" pattern="\+?[0-9\s\-\(\)]+" required>
                                 </label>
                               </div>
                               <div class="application-form__input-block application-form__input-block_email application-form__input-block_modal">
@@ -153,7 +153,7 @@
                   <span class="application-form__icon">
                     <img src="./img/tel-icon.svg" alt="Икона телефона">
                   </span>
-                  <input class="application-form__input" id="phone" type="tel" name="phone" placeholder="+7 (___) ___ ____" pattern="\+?[0-9\s\-\(\)]+" required>
+                  <input class="application-form__input" id="phone2" type="tel" name="phone" placeholder="+7 (___) ___ ____" pattern="\+?[0-9\s\-\(\)]+" required>
                 </label>
               </div>
               <div class="application-form__input-block application-form__input-block_email">
@@ -407,7 +407,7 @@
                   <span class="application-form__icon">
                     <img src="./img/tel-icon.svg" alt="Икона телефона">
                   </span>
-                  <input class="application-form__input" id="phone" type="tel" name="phone" placeholder="+7 (___) ___ ____" pattern="\+?[0-9\s\-\(\)]+" required>
+                  <input class="application-form__input" id="phone3" type="tel" name="phone" placeholder="+7 (___) ___ ____" pattern="\+?[0-9\s\-\(\)]+" required>
                 </label>
               </div>
               <div class="application-form__input-block application-form__input-block_email">
@@ -452,7 +452,9 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script>
   <script type="text/javascript">
     jQuery(function($){
-      $("#phone").mask("+7 (999) 999 9999");
+      $("#phone1").mask("+7 (999) 999 9999");
+      $("#phone2").mask("+7 (999) 999 9999");
+      $("#phone3").mask("+7 (999) 999 9999");
     });
   </script>
 </body>

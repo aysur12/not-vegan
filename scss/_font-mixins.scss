@@ -1,0 +1,74 @@
+@use 'vars.scss' as *;
+
+@mixin font-h1 {
+  color: $text-color;
+  font: 700 2.938rem/1.3 $main-font-family;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+@mixin font-h2 {
+  font: 700 2.5rem/1.3 $main-font-family;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+
+@mixin font-h3 {
+  color: $text-color;
+  font: 700 1.714rem/1.33 $main-font-family;
+}
+
+@mixin font-h4 {
+  color: $text-color;
+  font: 1.375rem/1.32 $main-font-family;
+}
+
+@mixin font-h5 {
+  color: $second-text-color;
+  font: 1.125em/1.61 $main-font-family;
+}
+
+@mixin font-h6 {
+  color: $text-color;
+  font: 1.125rem/1.61 $main-font-family;
+}
+
+@mixin font-par {
+  color: $text-color;;
+  font: 1rem/1.625 $main-font-family;
+}
+
+@mixin font-link {
+  color: $second-text-color;
+  font: 600 1rem/1.71 $secondary-font-family;
+}
+
+@mixin font-btn {
+  color: $text-color;
+  font: 600 0.875rem/1.57 $main-font-family;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+@mixin font-input {
+  color: $second-text-color;
+  font: 400 1rem/1.625 $secondary-font-family;
+}
+
+@mixin font-check {
+  color: $input-text-color;
+  font: 400 0.875rem/1.57 $main-font-family;
+}
+
+@mixin heading-h3 {
+  color: $text-color;
+  font: 400 1.125rem/1.61 $main-font-family;
+  text-transform: uppercase;
+}
+
+@mixin modal-heading {
+  color: $second-text-color;
+  font: 600 1.375rem/1.59 $main-font-family;
+}
+

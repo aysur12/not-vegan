@@ -1,0 +1,73 @@
+@use '../main.scss' as *;
+
+.achievements {
+  position: relative;
+  max-width: 34.688em;
+  max-height: 682px;
+  margin-top: 6px;
+  padding: 1.875em 2.188em 1.625em 1.875em;
+  background-color: $primary-bg-color;
+  border-radius: 10px;
+
+  @media screen and (max-width: 1214px) {
+    max-width: 100%;
+    margin-top: -4px;
+  }
+
+  @media screen and (max-width: 600px) {
+    max-height: 100%;
+  }
+
+  @media screen and (max-width: 355px) {
+    padding: 1em 0.3em 1em 1em;
+  }
+
+  &__decoration {
+    position: absolute;
+    right: 29px;
+    top: -6px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.375em;
+  }
+
+  &__heading {
+    max-width: 14.167em;
+    margin: 0;
+    padding: 0.667em 1.667em;
+    background: $primary-gradient;
+    @include heading-h3;
+    border-radius: 5px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.063em;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+    @media screen and (max-width: 600px) {
+      align-items: flex-start;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    @include font-h5;
+  }
+
+  &__text-span {
+    font-weight: 600;
+  }
+}

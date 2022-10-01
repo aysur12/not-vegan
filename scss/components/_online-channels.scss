@@ -1,0 +1,61 @@
+@use '../main.scss' as *;
+
+.online-channels {
+  display: grid;
+  width: 100%;
+
+  &__img-block {
+    grid-area: 1/-1;
+    z-index: 1;
+
+    @media screen and (max-width: 476px) {
+      display: none;
+    }
+  }
+
+  &__img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__info-block {
+    grid-area: 1/-1;
+  }
+
+  &__content {
+    margin-top: 0.813em;
+    padding: 1.438em 5.875em 1.625em 10.5em;
+    border: 1px solid #484646;
+    border-radius: 10px;
+
+    @media screen and (max-width: 768px) {
+      padding: 0.438em 0.875em 0.625em 10.5em
+    }
+
+    @media screen and (max-width: 495px) {
+      margin-bottom: 2em;
+    }
+
+    @media screen and (max-width: 476px) {
+      padding: 1em;
+    }
+  }
+
+  &__heading {
+    margin: 0;
+    @include font-h5;
+    font-weight: 600;
+    color: $third-text-color;
+  }
+  
+  &__text {
+    margin: 0;
+    @include font-par;
+    color: $third-text-color;
+    font-weight: 400;
+  }
+
+  &__text-span {
+    font-weight: 600;
+  }
+}

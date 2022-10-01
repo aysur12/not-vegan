@@ -1,0 +1,29 @@
+@use '../main.scss' as *;
+
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1191px;
+  padding: 1.25em 0 2.063em;
+  margin: 0 auto;
+
+  @media screen and (max-width: 1910px) {
+    padding: 1.25em 1.438em 2.063em;
+  }
+
+  &__heading {
+    max-width: 360px;
+    margin: 0;
+    @include font-par;
+    font-weight: 300;
+
+    @media screen and (max-width: 1150px) {
+      display: none;
+    }
+  }
+
+  &__heading-span {
+    font-weight: 600;
+  }
+}

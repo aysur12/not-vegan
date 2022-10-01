@@ -1,0 +1,65 @@
+@use '../main.scss' as *;
+
+.promo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1140px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 1150px) {
+    padding: 0 15px;
+    text-align: center;
+  }
+
+  &__heading-h1 {
+    width: 100%;
+    max-width: 20.362em;
+    margin: 0 0 15px;
+    text-align: center;
+    @include font-h1;
+
+    @media screen and (max-width: 768px) {
+      font-size: 20px;
+    }
+  }
+
+  &__heading-h1-span {
+    background: $primary-gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+
+  &__heading-h4 {
+    margin: 0 0 2.773em;
+    padding: 0.364em 20px 0.455em 0.909em;
+    @include font-h4;
+    font-weight: 400;
+    border: 2px solid #414143;
+    border-radius: 5px;
+  }
+
+  &__heading-h4-span {
+    font-weight: 600;
+    background: $primary-gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+
+  &__heading-h6 {
+    max-width: 51.375em;
+    margin: 0 0 2.722em;
+    text-align: center;
+    @include font-h6;
+    font-weight: 400;
+
+    &_bold {
+      font-weight: 600;
+      margin-bottom: 3px;
+    }
+  }
+}

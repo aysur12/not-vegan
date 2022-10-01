@@ -1,0 +1,151 @@
+@use '../main.scss' as *;
+
+.partner-tasks {
+  width: 100%;
+  max-width: 46.875em;
+
+  &__heading {
+    width: 100%;
+    max-width: 13.611em;
+    margin: 0 0 0 1.25em;;
+    padding: 0.667em 1.667em;
+    background: $primary-gradient;
+    @include heading-h3;
+    border-radius: 5px;
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.875em;
+    align-items: center;
+
+    @media screen and (max-width: 1054px) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__left-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2.063em;
+    max-width: 47em;
+  }
+
+  &__card {
+    padding: 10px 10px 2.25em;
+    background: $dark-card-gradient;
+    box-shadow: inset 1px -1px 1px rgba(255, 255, 255, 0.25), inset -1px 0px 1px rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+  }
+
+  &__table {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 46.875em;
+    margin: 0;
+    margin-bottom: 1.625em;
+    border: 1px solid #5F5F64;
+    border-radius: 10px;
+    border-collapse:collapse;
+
+    @media screen and (max-width: 782px) {
+      justify-content: center;
+      width: 100%;
+    }
+  }
+
+  &__td {
+    display: flex;
+    width: 364px;
+    max-height: 124px;
+    padding: 1.188em 0.625em 2.5em;
+
+    @media screen and (max-width: 782px) {
+      width: 100%;
+      padding: 1.5em 0.5em;
+    }
+
+    @media screen and (max-width: 320px) {
+      justify-content: center;
+      padding: 0;
+    }
+
+    &_1 {
+      border-bottom: 1px solid #5F5F64;
+    }
+
+    &_2 {
+      padding: 1.188em 1.25em 2.5em;
+      border-bottom: 1px solid #5F5F64;
+      border-left: 1px solid #5F5F64;
+
+      @media screen and (max-width: 782px) {
+        padding: 1.5em 0.5em;
+      }
+    }
+
+    &_3 {
+      border-bottom: 1px solid #5F5F64;
+    }
+
+    &_4 {
+      padding: 1.188em 1.25em 2.5em;
+      border-bottom: 1px solid #5F5F64;
+      border-left: 1px solid #5F5F64;
+
+      @media screen and (max-width: 782px) {
+        padding: 1.5em 0.5em;
+      }
+    }
+  }
+
+  &__item {
+    display: flex;
+    gap: 6px;
+  }
+
+  &__icon {
+    padding-top: 8px;
+  }
+
+  &__text-block {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    @include font-h6;
+    font-weight: 400;
+
+    @media screen and (max-width: 782px) {
+      flex-direction: row;
+    }
+
+    @media screen and (max-width: 600px) {
+      flex-direction: column;
+    }
+  }
+
+  &__text-normal-block {
+    display: flex;
+    gap: 9px;
+  }
+
+  &__number,
+  &__text,
+  &__text-bold {
+    margin: 0;
+  }
+
+  &__text-bold {
+    font-weight: 600;
+  }
+
+  &__task-info {
+    max-width: 34.5em;
+    margin: 0 auto;
+    text-align: center;
+    @include font-h6;
+    font-weight: 600;
+  }
+}

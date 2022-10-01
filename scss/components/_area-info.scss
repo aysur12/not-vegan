@@ -1,0 +1,34 @@
+@use '../main.scss' as *;
+
+.area-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 240px;
+  height: 240px;
+  background: url('../img/ellipse.svg');
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  &__text {
+    margin: 0;
+    @include font-par;
+    color: $second-text-color;
+  }
+
+  &__text-span {
+    @include font-h4;
+    color: $second-text-color;
+    font-weight: 600;
+  }
+
+
+}
+
+
+
+
